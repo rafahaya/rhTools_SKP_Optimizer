@@ -8,7 +8,7 @@ Projetada para fluxos de trabalho de **ArchViz, Engenharia e BIM**, permitindo r
 
 ## 🚀 Download Direto
 Baixe a versão compilada portátil (não requer instalação de Python nem dependências):
-- 📥 **[Baixar rhTools SKP Optimizer v1.0.1 (.exe)](https://github.com/rafahaya/rhTools_SKP_Optimizer/releases/latest)**
+- 📥 **[Baixar rhTools SKP Optimizer v1.0.2 (.exe)](https://github.com/rafahaya/rhTools_SKP_Optimizer/releases/latest)**
 
 ---
 
