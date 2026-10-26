@@ -4,8 +4,8 @@
 #
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(1, 0, 1, 0),
-    prodvers=(1, 0, 1, 0),
+    filevers=(1, 0, 2, 0),
+    prodvers=(1, 0, 2, 0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -21,12 +21,12 @@ VSVersionInfo(
           [
             StringStruct('CompanyName', 'rhTools'),
             StringStruct('FileDescription', 'rhTools SKP Optimizer'),
-            StringStruct('FileVersion', '1.0.1.0'),
+            StringStruct('FileVersion', '1.0.2.0'),
             StringStruct('InternalName', 'rhTools SKP Optimizer'),
             StringStruct('LegalCopyright', 'Copyright (C) 2026 rhTools'),
             StringStruct('OriginalFilename', 'rhTools SKP Optimizer.exe'),
             StringStruct('ProductName', 'rhTools SKP Optimizer'),
-            StringStruct('ProductVersion', '1.0.1.0')
+            StringStruct('ProductVersion', '1.0.2.0')
           ]
         )
       ]

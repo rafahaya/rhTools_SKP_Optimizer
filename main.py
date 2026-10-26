@@ -19,11 +19,12 @@ from tkinter import ttk, filedialog, messagebox
 from engine import SketchUpDetector, PipelineRunner
 from logo_asset import LOGO_HEADER_BASE64, ICON_ICO_BASE64
 
-APP_VERSION = "v1.0.1"
+APP_VERSION = "v1.0.2"
 
 DERIVED_SUFFIXES = [
     "_otimizado.skp",
     "_arquitetura.skp",
+    "_assets.skp",
     "_mobiliario_vegetacao.skp"
 ]
 
@@ -382,7 +383,7 @@ class App(tk.Tk):
         
         chk3 = tk.Checkbutton(
             opts_box,
-            text="Separar Mobiliário / Vegetação (_Mobiliario_Vegetacao.skp)",
+            text="Separar Mobiliário / Vegetação (_Assets.skp)",
             variable=self.opt_furniture,
             font=("Segoe UI", 9),
             fg=self.fg_text,
@@ -571,7 +572,7 @@ class App(tk.Tk):
         if skipped_derived > 0 and added == 0:
             messagebox.showinfo(
                 "Aviso",
-                f"{skipped_derived} arquivo(s) selecionado(s) já são arquivos de saída (_Otimizado, _Arquitetura ou _Mobiliario_Vegetacao) e foram ignorados."
+                f"{skipped_derived} arquivo(s) selecionado(s) já são arquivos de saída (_Otimizado, _Arquitetura ou _Assets) e foram ignorados."
             )
 
     def _add_folder(self):

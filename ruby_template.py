@@ -105,7 +105,7 @@ begin
       
       opt_path  = "#{dir}/#{base_name}_Otimizado.skp"
       arch_path = "#{dir}/#{base_name}_Arquitetura.skp"
-      mob_path  = "#{dir}/#{base_name}_Mobiliario_Vegetacao.skp"
+      mob_path  = "#{dir}/#{base_name}_Assets.skp"
       
       all_ents = model.entities.to_a
       update_status("running", 25, "Classificando #{all_ents.count} entidades...")
@@ -170,7 +170,7 @@ begin
         
         purge_all(new_model)
         
-        update_status("running", 95, "Salvando arquivo de Mobiliario e Vegetacao...")
+        update_status("running", 95, "Salvando arquivo de Assets (_Assets.skp)...")
         new_model.save_copy(mob_path)
         log("Salvo: #{mob_path}")
       end

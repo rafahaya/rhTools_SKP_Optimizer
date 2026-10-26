@@ -1,4 +1,4 @@
-# rhTools SKP Optimizer (`v1.0.1`)
+# rhTools SKP Optimizer (`v1.0.2`)
 
 Ferramenta desktop standalone moderna para Windows focada na **otimização, limpeza geométrica profunda e separação automatizada de arquivos do Trimble SketchUp** (`.skp`), com suporte a **fila de processamento em lote (Batch Queue)**.
 
@@ -22,12 +22,12 @@ Baixe a versão compilada portátil (não requer instalação de Python nem depe
 ### 2. Separação Inteligente (Arquitetura vs. Mobiliário & Vegetação)
 A ferramenta analisa a árvore de entidades e classifica os objetos por heurística bilingue (Português/Inglês), tags de camada, nomes de blocos e dimensões de *bounding box*:
 - **`_Arquitetura.skp`:** Isola alvenarias, paredes, pisos, lajes, forros, telhados, estruturas, esquadrias, portas, janelas e vidros.
-- **`_Mobiliario_Vegetacao.skp`:** Isola móveis soltos, aparelhos, decorações, luminárias, equipamentos de academia/crossfit/pilates e plantas/árvores/vegetação.
+- **`_Assets.skp`:** Isola móveis soltos, aparelhos, decorações, luminárias, equipamentos de academia/crossfit/pilates e plantas/árvores/vegetação.
 
 ### 3. Fila de Processamento em Lote (*Batch Queue*)
 - **Seleção Múltipla:** Adicione múltiplos arquivos `.skp` segurando <kbd>Ctrl</kbd> ou <kbd>Shift</kbd>.
 - **Adicionar Pasta Inteira:** Enfileira automaticamente todos os modelos `.skp` presentes no diretório selecionado.
-- **Filtro Inteligente Anti-Loop:** Ignora automaticamente arquivos derivados já criados (`_Otimizado`, `_Arquitetura`, `_Mobiliario_Vegetacao`).
+- **Filtro Inteligente Anti-Loop:** Ignora automaticamente arquivos derivados já criados (`_Otimizado`, `_Arquitetura`, `_Assets`).
 - **Isolamento de Processo:** Cada arquivo é processado em uma instância limpa do SketchUp que é fechada ao terminar, prevenindo vazamentos de memória (*memory leaks*) e travamentos em arquivos gigantes.
 - **Tabela Interativa:** Indicadores visuais de status (`⏳ Pendente`, `⚙️ Processando`, `✅ Concluído`, `❌ Erro`, `⏹ Cancelado`), tamanho e diretório. Duplo clique na linha abre a pasta no Explorer.
 - **Cancelamento Seguro:** Permite interromper a fila a qualquer momento com o botão `⏹ Cancelar Fila`.
